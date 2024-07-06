@@ -54,7 +54,7 @@ func CreateBook(c *gin.Context) {
 }
 
 func UpdateBook(c *gin.Context) {
-	id := c.Param(":id")
+	id := c.Param("id")
 
 	bookID, err := strconv.Atoi(id)
 	if err != nil {
